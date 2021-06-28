@@ -1,0 +1,276 @@
+body {
+   font-family: delius;
+   background-color: white;
+   color: #222222;
+   
+}
+
+.banner {
+   max-width: 100%;
+   max-height: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+.banner1 {
+   max-width: 100%;
+   max-height: 100%;
+   padding: 0;
+   margin: 0;
+   display: block;
+   border-radius: 2px;
+}
+
+.banner2 {
+   max-width: 100%;
+   max-height: 100%;
+   padding: 0;
+   margin: 0;
+   display: none;
+   border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+   .banner1 {
+      display: none;
+   }
+   
+   .banner2 {
+      display: block;
+   }
+}
+
+.display_banner {
+   background-color: #68befd;
+   color: #222222;
+   padding: 0.1px;
+   margin-top: 5px;
+   border-radius: 5px;
+   width: 100%;
+   text-align: center;
+   font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+   .display_banner {
+      font-size: 18px;
+   }
+}
+
+.leftcolumn {
+   width: 30%;
+   float: left;
+   margin-top: 0%;
+}
+
+.rightcolumn {
+   width: 67%;
+   float: left;
+   margin-left: 10px;
+}
+
+/* Center website */
+.main {
+  max-width: 1500px;
+  margin: 3%;
+  transition: 1.5s;
+}
+
+.row {
+  display: inline-block;
+  /*margin: 0px -20px;*/
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2.5%;
+  margin-right: 0%
+}
+
+.row2 {
+   display: inline-block;
+   padding: 10px;
+   float: left;
+}
+
+@media only screen and (max-width: 1050px) {
+   .main {
+      margin: 0%;
+   }
+   
+   .row,
+   .row > .column {
+      padding: 2.5%;
+      margin-right: 0%;
+}
+}
+
+@media only screen and (max-width: 900px) {
+   .main {
+      margin: 7%;
+   }
+   
+   .row,
+   .row > .column {
+      padding: 2.5%;
+      margin-right: 2.5%
+   }
+   
+   .leftcolumn {
+      margin-top: -3%;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .leftcolumn {
+      width: 60%;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .rightcolumn {
+      width: 100%;
+      float: none;
+      margin-left: 0%;
+   }
+   
+   .row2 {
+      float: none;
+   }
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  display: block; /* Hide all elements by default */
+}
+
+@media only screen and (max-width: 900px) {
+   .column {
+      width: 100%;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .column {
+   width: 100%;
+   }
+   
+   .row, .row > .column  {
+      padding: 2%;
+      margin-left: -3px;
+   }   
+}
+
+@media only screen and (max-width: 500px) {
+  .row, .row > .column  {
+      padding: 20px;
+      margin-left: -10px
+   }
+}   
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: var(--img-bg);
+  padding: 10px;
+  transition: 1.5s;
+  display: inline-block;
+  border-radius: 7px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 16px 0px #00000063;
+}
+
+/* The "show" class is added to the filtered elements */
+.showimg {
+  display: block;
+}
+
+.imgsection {
+   padding: 2px;
+   background-color: var(--bg-color);
+   margin: 2px;
+   transition: 1.5s;
+}
+
+.home {
+   font-size: 16px;
+   color: var(--font-color);
+   overflow: hidden;
+   text-overflow: ellipsis;
+   transition: 1.5s;
+}
+
+h4.home {
+   font-size: 16px;
+   color: var(--font-color);
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   transition: 1.5s;
+   margin: 10px;
+}
+
+a.home {
+   font-size: 16px;
+   transition: 0s;
+}
+
+.home-content {
+  color: var(--font-color);
+  display: -webkit-box;
+  text-align: left;
+  max-width: 100%;
+  margin: 10px;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 1.5s;
+}
+
+.shopbtn {
+   display: inline-block;
+   margin-left: 75%;
+   margin-right: auto;
+   text-align: center;
+   width: 20%;
+}
+
+a.shopbtn {
+   background-color: #98e4e8;
+   border: 2px solid #61b9be;
+   padding: 5px;
+   color: black;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+a.shopbtn:hover {
+   background-color: #4ec8ee;
+}
+
+@media only screen and (max-width: 600px) {
+   .shopbtn {
+      display: block;
+      width: 50%;
+      margin-left: auto;
+   }
+   
+   a.shopbtn {
+      padding: 10px;
+   }
+}
